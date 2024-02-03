@@ -233,12 +233,12 @@ const itemList = [
         img: "hamburger.png",
         name: "แฮมเบอร์เกอร์"
     },
-    {
-        id: 40,
-        level: 19,
-        img: "blue_woolly_hat.png",
-        name: "หมวกขนสัตว์สีน้ําเงิน"
-    },
+    // {
+    //     id: 40,
+    //     level: 19,
+    //     img: "blue_woolly_hat.png",
+    //     name: "หมวกขนสัตว์สีน้ําเงิน"
+    // },
     {
         id: 41,
         level: 19,
@@ -251,12 +251,12 @@ const itemList = [
         img: "blue_woolly_hat.png",
         name: "หมวกขนสัตว์สีน้ําเงิน"
     },
-    {
-        id: 43,
-        level: 19,
-        img: "cotton_shirt.png",
-        name: "เสื้อเชิ้ตผ้าฝ้าย"
-    },
+    // {
+    //     id: 43,
+    //     level: 19,
+    //     img: "cotton_shirt.png",
+    //     name: "เสื้อเชิ้ตผ้าฝ้าย"
+    // },
     {
         id: 44,
         level: 20,

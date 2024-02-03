@@ -97,7 +97,7 @@ nav {
     cursor: pointer;
 }
 
-.cart .count {
+.cart .cart-count {
     position: absolute;
     top: -10px;
     right: -10px;
@@ -233,6 +233,7 @@ nav {
 .detail .name {
     margin-bottom: 10px;
 }
+
 .action {
     text-align: center;
     display: flex;
@@ -358,13 +359,19 @@ nav {
     position: relative;
     width: 95vw;
     height: 95vh;
-    background-color: #fff;
+    background-color: #fcfcd4;
     padding: 10px;
     border-radius: 8px;
+    overflow: hidden;
 }
 
-.modal-hader {
+.modal-header {
     text-align: center;
+    margin: 10px 0;
+}
+.modal-header h1 {
+    color: #ff8800;
+    text-decoration: underline;
 }
 
 .close-modal {
@@ -377,8 +384,71 @@ nav {
     height: 50px;
     width: 50px;
     border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
 }
 
 .close-modal i {
-    font-size: 24px;
+    font-size: 24px; 
+}
+
+.modal-body {
+    height: 90%;
+    overflow-y: scroll;
+}
+
+.modal-item-list {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;   */
+}
+
+.modal-item {
+    margin: 5px;
+    position: relative;
+    background: #fff;
+    border: 1px solid silver;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 10px;
+    width: 90px;
+    height: 100px;
+    text-align: sta;
+}
+
+.modal-product-image {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+.modal-product-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.modal-product-name p {
+    text-align: center;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+.modal-product-count {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 30px;
+    right: 10px;
+}
+
+.modal-product-count h2 {
+    color: #ffffff;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        0.5px 1px 3px #000;
 }

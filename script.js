@@ -15,7 +15,7 @@ itemList.forEach((item) => {
             <div class="action">
                 <div class="action-input-box">
                     <button class="btn-minus"><i class="fa-solid fa-minus"></i></button>
-                    <input type="number" min="1" value="1" placeholder="จำนวน" class="action-input">
+                    <input type="number" min="1" value="10" placeholder="จำนวน" class="action-input">
                     <button class="btn-plus"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <button class="btn btn-add">เพิ่ม</button>
@@ -48,7 +48,7 @@ itemList.forEach((item) => {
 
     // Add to Card
     const btnAdd = itemEl.querySelector(".btn-add");
-    const btnDelete = itemEl.querySelector(".btn-delete"); 
+    const btnDelete = itemEl.querySelector(".btn-delete");
 
     btnAdd.addEventListener("click", () => {
         count = actionInput.value;
@@ -61,7 +61,7 @@ itemList.forEach((item) => {
         });
         btnAdd.style.display = "none";
         btnDelete.style.display = "block";
-        console.log(cartList)
+        updateCartCount();
     });
 
     btnDelete.addEventListener("click", () => {
@@ -70,16 +70,53 @@ itemList.forEach((item) => {
             cartList.splice(deleteIndex, 1);
             btnAdd.style.display = "block";
             btnDelete.style.display = "none";
-            console.log(cartList);
         }
+        updateCartCount();
     });
-    
 });
+
+
+// Cart
+const cartCount = document.querySelector(".cart-count span");
+function updateCartCount() {
+    cartCount.innerText = cartList.length;
+}
 
 // Modal
 const openCart = document.querySelector(".cart");
+const closeModal = document.querySelector(".close-modal");
 const modal = document.querySelector(".modal");
+const modalItemList = document.querySelector(".modal-item-list");
 
-openCart.addEventListener("click", ()=> {
-
+openCart.addEventListener("click", () => {
+    modal.classList.add("show");
+    updateProductModal();
 });
+closeModal.addEventListener("click", () => {
+    modal.classList.remove("show");
+});
+
+function updateProductModal() {
+    modalItemList.innerHTML = "";
+    if (cartList.length <= 0) {
+        modalItemList.innerHTML = `<h3 style="color:#383838;">ไม่มีรายการสินค้า...</h3>`;
+    } else {
+        cartList.forEach((item) => {
+            const modalItemEl = document.createElement("div");
+            modalItemEl.classList.add("modal-item");
+            modalItemEl.innerHTML =
+                `
+            <div class="modal-product-image">
+                <img src="images/productImage/${item.img}" alt="${item.img}">
+            </div>
+            <div class="modal-product-name">
+                <p>${item.name}</p>
+            </div>
+            <div class="modal-product-count">
+                <h2>${item.count}</h2>
+            </div>
+            `;
+            modalItemList.appendChild(modalItemEl);
+        });
+    }
+}
