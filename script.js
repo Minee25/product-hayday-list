@@ -6,7 +6,7 @@ itemList.forEach((item) => {
     itemEl.innerHTML =
         `
         <div class="image">
-            <img src="./images/productImage/${item.img}" alt="${item.img}">
+            <img src="images/productImage/${item.img}" alt="${item.img}">
         </div>
         <div class="detail">
             <div class="name">
@@ -107,7 +107,7 @@ function updateProductModal() {
             modalItemEl.innerHTML =
                 `
             <div class="modal-product-image">
-                <img src="./images/productImage/${item.img}" alt="${item.img}">
+                <img src="images/productImage/${item.img}" alt="${item.img}">
             </div>
             <div class="modal-product-name">
                 <p>${item.name}</p>
