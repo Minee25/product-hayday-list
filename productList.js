@@ -2,717 +2,2317 @@ const itemList = [
     {
         id: 1,
         level: 1,
-        img: ["wheat.png", "egg.png"],
-        name: ["ข้าวสาลี", "ไข่"]
+        img: "wheat.png",
+        name: "ข้าวสาลี"
     },
     {
         id: 2,
-        level: 2,
-        img: ["corn.png", "bread.png"],
-        name: ["ข้าวโพด", "ขนมปัง"]
+        level: 1,
+        img: "egg.png",
+        name: "ไข่"
     },
     {
         id: 3,
-        level: 3,
-        img: ["chicken_feed.png"],
-        name: ["อาหารไก่"]
+        level: 2,
+        img: "corn.png",
+        name: "ข้าวโพด"
     },
     {
         id: 4,
-        level: 5,
-        img: ["soybean.png"],
-        name: ["ถั่วเหลือง"]
+        level: 2,
+        img: "bread.png",
+        name: "ขนมปัง"
     },
     {
         id: 5,
-        level: 6,
-        img: ["cow_feed.png", "milk.png", "cream.png"],
-        name: ["อาหารวัว", "นมวัว", "ครีม"]
+        level: 3,
+        img: "chicken_feed.png",
+        name: "อาหารไก่"
     },
     {
         id: 6,
-        level: 7,
-        img: ["sugarcane.png", "corn_bread.png", "brown_sugar.png"],
-        name: ["อ้อย", "ขนมปังข้าวโพด", "น้ำตาลทราย"]
+        level: 5,
+        img: "soybean.png",
+        name: "ถั่วเหลือง"
     },
     {
         id: 7,
-        level: 8,
-        img: ["popcorn.png"],
-        name: ["ป๊อปคอร์น"]
+        level: 6,
+        img: "cow_feed.png",
+        name: "อาหารวัว"
     },
     {
         id: 8,
-        level: 9,
-        img: ["carrot.png", "butter.png", "pancake.png"],
-        name: ["แครอท", "เนย", "แพรเค้ก"]
+        level: 6,
+        img: "milk.png",
+        name: "นมวัว"
     },
     {
         id: 9,
-        level: 10,
-        img: ["pig_feed.png", "bacon.png", "cookie.png"],
-        name: ["อาหารหมู", "เบคอน", "คุกกี้"]
+        level: 6,
+        img: "cream.png",
+        name: "ครีม"
     },
     {
         id: 10,
-        level: 11,
-        img: ["bacon_and_eggs.png"],
-        name: ["เบคอนและไข่"]
+        level: 7,
+        img: "sugarcane.png",
+        name: "อ้อย"
     },
     {
         id: 11,
-        level: 12,
-        img: ["cheese.png"],
-        name: ["ชีส"]
+        level: 7,
+        img: "corn_bread.png",
+        name: "ขนมปังข้าวโพด"
     },
     {
         id: 12,
-        level: 13,
-        img: ["indigo.png", "white_sugar.png"],
-        name: ["คราม", "น้ำตาลทรายขาว"]
+        level: 7,
+        img: "brown_sugar.png",
+        name: "น้ำตาลทราย"
     },
     {
         id: 13,
-        level: 14,
-        img: ["carrot_pie.png"],
-        name: ["พายแครอท"]
+        level: 8,
+        img: "popcorn.png",
+        name: "ป๊อปคอร์น"
     },
     {
         id: 14,
-        level: 15,
-        img: ["pumpkin.png", "pumpkin_pie.png", "apple.png"],
-        name: ["ฟักทอง", "พายฟักทอง", "แอปเปิล"]
+        level: 9,
+        img: "carrot.png",
+        name: "แครอท"
     },
     {
         id: 15,
-        level: 16,
-        img: ["sheep_feed.png", "wool.png", "buttered_popcorn.png"],
-        name: ["อาหารแกะ", "ขนแกะ", "ข้าวโพดคั่วทาเนย"]
+        level: 9,
+        img: "butter.png",
+        name: "เนย"
     },
     {
         id: 16,
-        level: 17,
-        img: ["sweater.png"],
-        name: ["สเวตเตอร์"]
+        level: 9,
+        img: "pancake.png",
+        name: "แพรเค้ก"
     },
     {
         id: 17,
-        level: 18,
-        img: ["cotton.png", "bacon_pie.png", "syrup.png", "cotton_fabric.png", "hamburger.png"],
-        name: ["ผ้าย", "พายเบคอน", "น้ำเชื่อม", "ผ้าฝ้าย", "แฮมเบอร์เกอร์"]
+        level: 10,
+        img: "pig_feed.png",
+        name: "อาหารหมู"
     },
     {
         id: 18,
-        level: 19,
-        img: ["blue_woolly_hat.png", "cotton_shirt.png"],
-        name: ["หมวกขนสัตว์สีน้ําเงิน", "เสื้อเชิ้ตผ้าฝ้าย"]
+        level: 10,
+        img: "bacon.png",
+        name: "เบคอน"
     },
     {
         id: 19,
-        level: 20,
-        img: ["blue_sweater.png"],
-        name: ["เสื้อสีน้ําเงิน"]
+        level: 10,
+        img: "cookie.png",
+        name: "คุกกี้"
     },
     {
         id: 20,
-        level: 21,
-        img: ["carrot_cake.png", "wooly_chaps.png"],
-        name: ["เค้กแครอท", "กางเกงปุกปุย"]
+        level: 11,
+        img: "bacon_and_eggs.png",
+        name: "เบคอนและไข่"
     },
     {
         id: 21,
-        level: 22,
-        img: ["cherry.png"],
-        name: ["เชอร์รี่"]
+        level: 12,
+        img: "cheese.png",
+        name: "ชีส"
     },
     {
         id: 22,
-        level: 23,
-        img: ["cream_cake.png", "red_berry_cake.png"],
-        name: ["เค้กครีม", "เค้กเบอร์รี่สีแดง"]
+        level: 13,
+        img: "indigo.png",
+        name: "คราม"
     },
     {
         id: 23,
-        level: 24,
-        img: ["cheesecake.png", "silver_ore.png", "gold_ore.png", "platinum_ore.png", "silver_bar.png"],
-        name: ["ชีสเค้ก", "แร่เงิน", "แร่ทองคํา", "แร่แพลตตินั่ม", "แท่งเงิน"]
+        level: 13,
+        img: "white_sugar.png",
+        name: "น้ำตาลทรายขาว"
     },
     {
         id: 24,
-        level: 25,
-        img: ["chili_pepper.png", "chili_popcorn.png", "gold_bar.png", "platinum_bar.png", "violet_dress.png"],
-        name: ["พริก", "พริกป๊อปคอร์น", "ทองคําแท่ง", "แพลทินัมบาร์", "ชุดสีม่วง"]
+        level: 14,
+        img: "carrot_pie.png",
+        name: "พายแครอท"
     },
     {
         id: 25,
-        level: 26,
-        img: ["blackberry.png", "blackberry_muffin.png", "carrot_juice.png"],
-        name: ["แบล็กเบอร์รี่", "มัฟฟินแบล็กเบอร์รี่", "น้ําแครอท"]
+        level: 15,
+        img: "pumpkin.png",
+        name: "ฟักทอง"
     },
     {
         id: 26,
-        level: 27,
-        img: ["fish_fillet.png", "fish_burger.png"],
-        name: ["เนื้อปลา", "เบอร์เกอร์ปลา"]
+        level: 15,
+        img: "pumpkin_pie.png",
+        name: "พายฟักทอง"
     },
     {
         id: 27,
-        level: 28,
-        img: ["apple_pie.png", "fish_pie.png", "apple_juice.png"],
-        name: ["พายแอปเปิ้ล", "พายปลา", "น้ําแอปเปิ้ล"]
+        level: 15,
+        img: "apple.png",
+        name: "แอปเปิล"
     },
     {
         id: 28,
-        level: 29,
-        img: ["vanilla_ice_cream.png"],
-        name: ["ไอศกรีมวานิลลา"]
+        level: 16,
+        img: "sheep_feed.png",
+        name: "อาหารแกะ"
     },
     {
         id: 29,
-        level: 30,
-        img: ["tomato.png", "roasted_tomatoes.png", "cherry_juice.png"],
-        name: ["มะเขือเทศ", "มะเขือเทศย่าง", "น้ําเชอร์รี่"]
+        level: 16,
+        img: "wool.png",
+        name: "ขนแกะ"
     },
     {
         id: 30,
-        level: 31.,
-        img: ["tomato_juice.png", "berry_juice.png"],
-        name: ["น้ํามะเขือเทศ", "น้ําเบอร์รี่"]
+        level: 16,
+        img: "buttered_popcorn.png",
+        name: "ข้าวโพดคั่วทาเนย"
     },
     {
         id: 31,
-        level: 32,
-        img: ["goat_feed.png", "goat_milk.png"],
-        name: ["อาหารแพะ", "นมแพะ"]
+        level: 16,
+        img: "sheep_feed.png",
+        name: "อาหารแกะ"
     },
     {
         id: 32,
-        level: 33,
-        img: ["goat_cheese.png", "pizza.png", "coal.png", "refined_coal.png", "cherry_popsicle.png"],
-        name: ["ชีสแพะ", "พิซซ่า", "ถ่านหิน", "ถ่านหินกลั่น", "ไอติมเชอร์รี่"]
+        level: 16,
+        img: "wool.png",
+        name: "ขนแกะ"
     },
     {
         id: 33,
-        level: 34,
-        img: ["strawberry.png", "feta_pie.png", "iron_ore.png", "iron_bar.png", "strawberry_ice_cream.png", "wheat_bundle.png", "meat_bucket.png"],
-        name: ["สตรอว์เบอร์รี่", "เฟต้าพาย", "แร่เหล็ก", "เหล็กเส้น", "ไอศกรีมสตรอว์เบอร์รี่", "มัดข้าวสาลี", "ถังเนื้อ"]
+        level: 16,
+        img: "buttered_popcorn.png",
+        name: "ข้าวโพดคั่วทาเนย"
     },
     {
         id: 34,
-        level: 35,
-        img: ["potato.png", "strawberry_cake.png", "baked_potato.png", "apple_jam.png"],
-        name: ["มันฝรั่ง", "เค้กสตรอเบอร์รี่", "มันฝรั่งอบ", "แยมแอปเปิ้ล"]
+        level: 17,
+        img: "sweater.png",
+        name: "สเวตเตอร์"
     },
     {
         id: 35,
-        level: 36,
-        img: ["Chocolate_cake.png", "Casserole.png", "Cacao.png", "Raspberry_jam.png"],
-        name: ["เค้กช็อคโกแลต", "หม้อตุ๋น", "โกโก้", "แยมราสเบอร์รี่"]
+        level: 18,
+        img: "cotton.png",
+        name: "ผ้าย"
     },
     {
         id: 36,
-        level: 37,
-        img: ["Spicy_pizza.png", "Blackberry_jam.png"],
-        name: ["พิซซ่ารสเผ็ด", "แยมแบล็กเบอร์รี่"]
+        level: 18,
+        img: "bacon_pie.png",
+        name: "พายเบคอน"
     },
     {
         id: 37,
-        level: 38,
-        img: ["Potato_feta_cake.png", "Cherry_jam.png", "Bracelet.png"],
-        name: ["เค้กเฟต้ามันฝรั่ง", "แยมเชอร์รี่", "วลัย"]
+        level: 18,
+        img: "syrup.png",
+        name: "น้ำเชื่อม"
     },
     {
         id: 38,
-        level: 39,
-        img: ["Potato_bread.png", "Shepherds_pie.png", "Chocolate_ice_cream.png", "Honeycomb.png", "Necklace.png", "Honey.png"],
-        name: ["ขนมปังมันฝรั่ง", "พายของคนเลี้ยงแกะ", "ไอศกรีมช็อกโกแลต", "รังผึ้ง", "สร้อยคอ", "น้ำผึ้ง"]
+        level: 18,
+        img: "cotton_fabric.png",
+        name: "ผ้าฝ้าย"
     },
     {
         id: 39,
-        level: 40,
-        img: ["Honey_popcorn.png", "Diamond_ring.png"],
-        name: ["ข้าวโพดคั่วน้ําผึ้ง", "แหวนเพชร"]
+        level: 18,
+        img: "hamburger.png",
+        name: "แฮมเบอร์เกอร์"
     },
     {
         id: 40,
-        level: 41,
-        img: ["Fish_and_chips.png", "Iron_bracelet.png"],
-        name: ["ฟิชแอนด์ชิปส์", "สร้อยข้อมือเหล็ก"]
+        level: 19,
+        img: "blue_woolly_hat.png",
+        name: "หมวกขนสัตว์สีน้ําเงิน"
     },
     {
         id: 41,
-        level: 42,
-        img: ["Coffee_bean.png", "Espresso.png", "Honey_apple_cake.png"],
-        name: ["เมล็ดกาแฟ", "เอสเพรสโซ่", "เค้กแอปเปิ้ลน้ําผึ้ง"]
+        level: 19,
+        img: "cotton_shirt.png",
+        name: "เสื้อเชิ้ตผ้าฝ้าย"
     },
     {
         id: 42,
-        level: 43,
-        img: ["Caffe_latte.png"],
-        name: ["กาแฟกับนม",]
+        level: 19,
+        img: "blue_woolly_hat.png",
+        name: "หมวกขนสัตว์สีน้ําเงิน"
     },
     {
         id: 43,
-        level: 44,
-        img: ["Chocolate_popcorn.png", "Lobster_tail.png"],
-        name: ["ป๊อปคอร์นช็อกโกแลต", "หางกุ้งก้ามกราม"]
+        level: 19,
+        img: "cotton_shirt.png",
+        name: "เสื้อเชิ้ตผ้าฝ้าย"
     },
     {
         id: 44,
-        level: 45,
-        img: ["Frutti_di_Mare_pizza.png", "Caffe_mocha.png"],
-        name: ["พิซซ่า Frutti di Mare", "กาแฟมอคค่า"]
+        level: 20,
+        img: "blue_sweater.png",
+        name: "เสื้อสีน้ําเงิน"
     },
     {
         id: 45,
-        level: 46,
-        img: ["Raspberry_mocha.png", "Lobster_soup.png"],
-        name: ["ราสเบอร์รี่มอคค่า", "ซุปกุ้งก้ามกราม"]
+        level: 21,
+        img: "carrot_cake.png",
+        name: "เค้กแครอท"
     },
     {
         id: 46,
-        level: 47,
-        img: ["Hot_chocolate.png", "Tomato_soup.png"],
-        name: ["ช็อคโกแลตร้อน", "ซุปมะเขือเทศ"]
+        level: 21,
+        img: "wooly_chaps.png",
+        name: "กางเกงปุกปุย"
     },
     {
         id: 47,
-        level: 48,
-        img: ["Red_scarf.png", "Lobster_skewer.png", "Beeswax.png", "Strawberry_candle.png"],
-        name: ["ผ้าพันคอสีแดง", "กุ้งก้ามกรามเสียบไม้", "ขี้ผึ้ง", "เทียนสตรอเบอร์รี่"]
+        level: 22,
+        img: "cherry.png",
+        name: "เชอร์รี่"
     },
     {
         id: 48,
-        level: 49,
-        img: ["Rustic_bouquet.png", "Pumpkin_soup.png", "Asparagus.png", "Asparagus_quiche.png"],
-        name: ["ช่อดอกไม้ชนบท", "ซุปฟักทอง", "หน่อไม้ฝรั่ง", "คีชหน่อไม้ฝรั่ง"]
+        level: 23,
+        img: "cream_cake.png",
+        name: "เค้กครีม"
     },
     {
         id: 49,
-        level: 50,
-        img: ["Strawberry_jam.png", "Duck_feather.png", "Sesame.png", "Sesame_ice_cream.png"],
-        name: ["แยมสตรอเบอร์รี่", "ขนเป็ด", "งา", "ไอศกรีมงา"]
+        level: 23,
+        img: "red_berry_cake.png",
+        name: "เค้กเบอร์รี่สีแดง"
     },
     {
         id: 50,
-        level: 51,
-        img: ["Caramel_apple.png", "Pillow.png", "Asparagus_soup.png"],
-        name: ["แอปเปิ้ลคาราเมล", "หมอน", "ซุปหน่อไม้ฝรั่ง"]
+        level: 24,
+        img: "cheesecake.png",
+        name: "ชีสเค้ก"
     },
     {
         id: 51,
-        level: 52,
-        img: ["Toffee.png", "Raspberry_candle.png", "Pineapple.png", "Pineapple_juice.png"],
-        name: ["ลูกกวาด", "เทียนราสเบอร์รี่", "สับปะรด", "น้ําสับปะรด"]
+        level: 24,
+        img: "silver_ore.png",
+        name: "แร่เงิน"
     },
     {
         id: 52,
-        level: 53,
-        img: ["Fish_soup.png", "Lily.png"],
-        name: ["ซุปปลา", "ลิลลี่"]
+        level: 24,
+        img: "gold_ore.png",
+        name: "แร่ทองคํา "
     },
     {
         id: 53,
-        level: 54,
-        img: ["Soy_sauce.png", "Chocolate.png", "Fancy_cake.png"],
-        name: ["ซอสถั่วเหลือง", "ช็อกโกแลต", "เค้กแฟนซี"]
+        level: 24,
+        img: "platinum_ore.png",
+        name: "แร่แพลตตินั่ม"
     },
     {
         id: 54,
-        level: 56,
-        img: ["Rice.png", "Sushi_roll.png"],
-        name: ["ข้าว", "ซูชิโรล"]
+        level: 24,
+        img: "silver_bar.png",
+        name: "แท่งเงิน"
     },
     {
         id: 55,
-        level: 57,
-        img: ["Olive.png", "Lollipop.png"],
-        name: ["มะกอก", "อมยิ้ม"]
+        level: 25,
+        img: "chili_pepper.png",
+        name: "พริก"
     },
     {
         id: 56,
-        level: 58,
-        img: ["Lettuce.png", "Feta_salad.png"],
-        name: ["ผักกาดหอม", "สลัดเฟต้า"]
+        level: 25,
+        img: "chili_popcorn.png",
+        name: "พริกป๊อปคอร์น"
     },
     {
         id: 57,
-        level: 59,
-        img: ["Lobster_sushi.png", "Blanket.png"],
-        name: ["ซูชิกุ้งมังกร", "ผ้าห่ม"]
+        level: 25,
+        img: "gold_bar.png",
+        name: "แท่งทองคํา"
     },
     {
         id: 58,
-        level: 60,
-        img: ["Jelly_beans.png", "Olive_oil.png", "Garlic.png", "Garlic_bread.png"],
-        name: ["ถั่วเยลลี่", "น้ํามันมะกอก", "กระเทียม", "ขนมปังกระเทียม"]
+        level: 25,
+        img: "platinum_bar.png",
+        name: "แท่งแพลทินัม"
     },
     {
         id: 59,
-        level: 61,
-        img: ["Veggie_bagel.png"],
-        name: ["เบเกิลผัก"]
+        level: 25,
+        img: "violet_dress.png",
+        name: "ชุดสีม่วง"
     },
     {
         id: 60,
-        level: 62,
-        img: ["Mayonnaise.png", "BLT_salad.png", "Caramel_latte.png", "Peanuts.png"],
-        name: ["มายองเนส", "สลัด BLT", "คาราเมลลาเต้", "ถั่วลิสง"]
+        level: 26,
+        img: "blackberry.png",
+        name: "แบล็กเบอร์รี่"
     },
     {
         id: 61,
-        level: 63,
-        img: ["Sunflower.png", "Egg_sushi.png", "Honey_peanuts.png"],
-        name: ["ทานตะวัน", "ซูชิไข่", "ถั่วลิสงน้ําผึ้ง"]
+        level: 26,
+        img: "blackberry_muffin.png",
+        name: "มัฟฟินแบล็กเบอร์รี่"
     },
     {
         id: 62,
-        level: 64,
-        img: ["Seafood_salad.png", "Berry_smoothie.png", "Snack_mix.png"],
-        name: ["สลัดทะเล", "เบอร์รี่ปั่น", "ขนมขบเคี้ยวผสม"]
+        level: 26,
+        img: "carrot_juice.png",
+        name: "น้ําแครอท"
     },
     {
         id: 63,
-        level: 65,
-        img: ["Bright_bouquet.png", "Bacon_toast.png", "Pineapple_cake.png", "Chocolate_pie.png", "Cabbage.png", "Cabbage_soup.png"],
-        name: ["ช่อดอกไม้สดใส", "ขนมปังปิ้งเบคอน", "เค้กสับปะรด", "พายช็อคโกแลต", "กะหล่ำปลี", "ซุปกะหล่ําปลี"]
+        level: 27,
+        img: 'fish_fillet.png',
+        name: 'เนื้อปลา'
     },
     {
         id: 64,
-        level: 66,
-        img: ["Lemon.png", "Lemon_curd.png", "Olive_dip.png", "Egg_sandwich.png", "Egg_sandwich.png", "Green_smoothie.png"],
-        name: ["มะนาว", "เต้าหู้มะนาว", "น้ําจิ้มมะกอก", "แซนวิชไข่", "กรีนสมูทตี้"]
+        level: 27,
+        img: 'fish_burger.png',
+        name: 'เบอร์เกอร์ปลา'
     },
     {
         id: 65,
-        level: 67,
-        img: ["Fresh_pasta.png", "Pasta_salad.png", "Lemon_pie.png", "Grilled_asparagus.png"],
-        name: ["พาสต้าสด", "สลัดพาสต้า", "พายมะนาว", "หน่อไม้ฝรั่งย่าง"]
+        level: 28,
+        img: 'apple_pie.png',
+        name: 'พายแอปเปิ้ล'
     },
     {
         id: 66,
-        level: 68,
-        img: ["Onion.png", "Grilled_onion.png", "Lemon_cake.png", "Peanut_butter_milkshake.png"],
-        name: ["หัวหอม", "หัวหอมย่าง", "เค้กมะนาว", "มิลค์เชคเนยถั่ว"]
+        level: 28,
+        img: 'fish_pie.png',
+        name: 'พายปลา'
     },
     {
         id: 67,
-        level: 69,
-        img: ["Tomato_sauce.png", "Honey_toast.png", "Fried_rice.png"],
-        name: ["ซอสมะเขือเทศ", "ฮันนี่โทสต์", "ข้าวผัด"]
+        level: 28,
+        img: 'apple_juice.png',
+        name: 'น้ําแอปเปิ้ล'
     },
     {
         id: 68,
-        level: 70,
-        img: ["Yogurt_smoothie.png", "Cloche_hat.png", "Cucumber.png", "Cucumber_smoothie.png"],
-        name: ["โยเกิร์ตปั่น", "หมวก Cloche", "แตงกวา", "แตงกวาปั่น"]
+        level: 29,
+        img: "vanilla_ice_cream.png",
+        name: "ไอศกรีมวานิลลา"
     },
     {
         id: 69,
-        level: 71,
-        img: ["Orange.png", "Flower_shawl.png", "Orange_juice.png", "Peanut_butter_and_jelly_sandwich.png"],
-        name: ["ส้ม", "ผ้าคลุมไหล่ลายดอกไม้", "น้ําส้ม", "แซนวิชเนยถั่วและเยลลี่"]
+        level: 30,
+        img: 'tomato.png',
+        name: 'มะเขือเทศ'
     },
     {
         id: 70,
-        level: 72,
-        img: ["Onion_soup.png", "Lemon_candle.png", "Top_hat.png", "Gnocchi.png", "Beetroot.png", "Winter_veggies.png"],
-        name: ["ซุปหัวหอม", "เทียนมะนาว", "หมวกทรงสูง", "ญ็อกกี", "หัวผักกาดหวาน", "ผักเมืองหนาว"]
+        level: 30,
+        img: 'roasted_tomatoes.png',
+        name: 'มะเขือเทศย่าง'
     },
     {
         id: 71,
-        level: 73,
-        img: ["Rice_noodles.png", "Noodle_soup.png", "Gracious_bouquet.png"],
-        name: ["ก๋วยเตี๋ยวข้าว", "ก๋วยเตี๋ยว", "ช่อดอกไม้ที่สง่างาม"]
+        level: 30,
+        img: 'cherry_juice.png',
+        name: 'น้ําเชอร์รี่'
     },
     {
         id: 72,
-        level: 74,
-        img: ["Bell_pepper.png", "Marmalade.png", "Sun_hat.png", "Veggie_lasagna.png", "Veggie_platter.png"],
-        name: ["พริกหยวก", "แยมผิวส้ม", "หมวกกันแดด", "ลาซานญ่าผัก", "จานผัก"]
+        level: 31,
+        img: "tomato_juice.png",
+        name: "น้ํามะเขือเทศ"
     },
     {
         id: 73,
-        level: 75,
-        img: ["Hot_dog.png", "Coleslaw.png", "Cotton_Candy.png"],
-        name: ["ฮอทดอก", "โคลสลอว์", "สายไหม"]
+        level: 31,
+        img: "berry_juice.png",
+        name: "น้ําเบอร์รี่"
     },
     {
         id: 74,
-        level: 76,
-        img: ["Peach.png", "Peach_tart.png", "Tofu_dog.png", "Big_sushi_roll.png", "Beetroot_salad.png", "Plain_Donut.png"],
-        name: ["พีช", "ทาร์ตพีช", "สุนัขเต้าหู้", "ซูชิโรลใหญ่", "สลัดบีทรูท", "โดนัทธรรมดา"]
+        level: 32,
+        img: 'goat_feed.png',
+        name: 'อาหารแพะ'
     },
     {
         id: 75,
-        level: 77,
-        img: ["Salsa.png", "Taco.png", "Colourful_omelet.png", "Spring_omelet.png"],
-        name: ["ซัลซ่า", "ทาโก้", "ไข่เจียวหลากสี", "ไข่เจียวฤดูใบไม้ผลิ"]
+        level: 32,
+        img: 'goat_milk.png',
+        name: 'นมแพะ'
     },
     {
         id: 76,
-        level: 78,
-        img: ["Summer_rolls.png", "Orange_sorbet.png", "Corn_dog.png", "Potato_soup.png", "Ginger.png", "Sesame_brittle.png", "Affogato.png"],
-        name: ["ซัมเมอร์โรล", "เชอร์เบทส้ม", "คอร์นด็อก", "ซุปมันฝรั่ง", "ขิง", "งาเปราะ", "อัฟโฟกาโต"]
+        level: 33,
+        img: 'goat_cheese.png',
+        name: 'ชีสแพะ'
     },
     {
         id: 77,
-        level: 79,
-        img: ["Fish_taco.png", "Peach_jam.png", "Lobster_pasta.png", "Cucumber_sandwich.png", "Spicy_fish.png", "Sprinkled_Donut.png", "Cheese_omelet.png"],
-        name: ["ทาโก้ปลา", "แยมพีช", "พาสต้ากุ้งมังกร", "แซนวิชแตงกวา", "ปลารสเผ็ด", "โดนัทโรย", "ไข่เจียวชีส"]
+        level: 33,
+        img: 'pizza.png',
+        name: 'พิซซ่า'
     },
     {
         id: 78,
-        level: 80,
-        img: ["Tea_leaf.png", "Green_tea.png", "Onion_dog.png", "Stuffed_peppers.png"],
-        name: ["ใบชา", "ชาเขียว", "สุนัขหัวหอม", "พริกยัดไส้"]
+        level: 33,
+        img: 'coal.png',
+        name: 'ถ่านหิน'
     },
     {
         id: 79,
-        level: 81,
-        img: ["Milk_tea.png", "Bell_pepper_soup.png", "Chocolate_fondue.png"],
-        name: ["ชานม", "ซุปพริกหยวก", "ช็อกโกแลตฟองดู"]
+        level: 33,
+        img: 'refined_coal.png',
+        name: 'ถ่านหินกลั่น'
     },
     {
         id: 80,
-        level: 82,
-        img: ["Peony.png", "Quesadilla.png", "Fruit_salad.png", "Crunchy_Donut.png"],
-        name: ["โบตั๋น", "Quesadilla", "สลัดผลไม้", "โดนัทกรุบกรอบ"]
+        level: 33,
+        img: 'cherry_popsicle.png',
+        name: 'ไอติมเชอร์รี่'
     },
     {
         id: 81,
-        level: 83,
-        img: ["Pasta_carbonara.png", "Peach_ice_cream.png", "Honey_tea.png", "Broccoli.png", "Broccoli_pasta.png", "Rice_omelet.png"],
-        name: ["พาสต้าคาโบนาร่า", "ไอศกรีมพีช", "ชาน้ําผึ้ง", "บรอกโคลี", "พาสต้าบร็อคโคลี่", "ข้าวไข่เจียว"]
+        level: 34,
+        img: 'strawberry.png',
+        name: 'สตรอว์เบอร์รี่'
     },
     {
         id: 82,
-        level: 84,
-        img: ["Summer_salad.png", "Grapes.png", "Grape_juice.png", "Onion_melt.png", "Honey_soap.png", "Lemon_lotion.png", "Colorful_Candles.png"],
-        name: ["สลัดฤดูร้อน", "องุ่น", "น้ําองุ่น", "หัวหอมละลาย", "สบู่น้ําผึ้ง", "โลชั่นมะนาว", "เทียนหลากสี"]
+        level: 34,
+        img: 'feta_pie.png',
+        name: 'เฟต้าพาย'
     },
     {
         id: 83,
-        level: 85,
-        img: ["Mint.png", "Grape_jam.png", "Mint_ice_cream.png"],
-        name: ["โรงกษาปณ์", "แยมองุ่น", "ไอศกรีมมิ้นท์"]
+        level: 34,
+        img: 'iron_ore.png',
+        name: 'แร่เหล็ก'
     },
     {
         id: 84,
-        level: 86,
-        img: ["Flower_crown.png", "Lemon_tea.png", "Bacon_fondue.png", "Peanut_noodles.png", "Gingerbread_cookie.png", "Cream_Donut.png"],
-        name: ["มงกุฎดอกไม้", "ชามะนาว", "เบคอนฟองดู", "บะหมี่ถั่วลิสง", "คุกกี้ขนมปังขิง", "ครีมโดนัท"]
+        level: 34,
+        img: 'iron_bar.png',
+        name: 'เหล็กเส้น'
     },
     {
         id: 85,
-        level: 87,
-        img: ["Nachos.png", "Spicy_pasta.png", "Broccoli_soup.png", "Bacon_fries.png", "Potato_Omelet.png"],
-        name: ["นาโชส", "พาสต้ารสเผ็ด", "ซุปบร็อคโคลี่", "เบคอนทอด", "ไข่เจียวมันฝรั่ง"]
+        level: 34,
+        img: 'strawberry_ice_cream.png',
+        name: 'ไอศกรีมสตรอว์เบอร์รี่'
     },
     {
         id: 86,
-        level: 88,
-        img: ["Mixed_smoothie.png", "Banana.png", "Iced_banana_latte.png", "Apple_ginger_tea.png", "Bacon_Donut.png", "Passion_fruit.png", "Passion_fruit_juice.png"],
-        name: ["สมูทตี้ผสม", "กล้วย", "ลาเต้กล้วยเย็น", "ชาขิงแอปเปิ้ล", "เบคอนโดนัท", "เสาวรส", "น้ําเสาวรส"]
+        level: 34,
+        img: 'wheat_bundle.png',
+        name: 'มัดข้าวสาลี'
     },
     {
         id: 87,
-        level: 89,
-        img: ["Orange_tea.png", "Fruit_cake.png", "Mushroom.png", "Mushroom_salad.png", "Tofu_stir_fry.png"],
-        name: ["ชาส้ม", "เค้กผลไม้", "เห็ด", "สลัดเห็ด", "ผัดเต้าหู้"]
+        level: 34,
+        img: 'meat_bucket.png',
+        name: 'ถังเนื้อ'
     },
     {
         id: 88,
-        level: 90,
-        img: ["Candy_bouquet.png", "Eggplant.png", "Grilled_eggplant.png"],
-        name: ["ช่อดอกไม้", "มะเขือ", "มะเขือยาวย่าง"]
+        level: 35,
+        img: 'potato.png',
+        name: 'มันฝรั่ง'
     },
     {
         id: 89,
-        level: 91,
-        img: ["Banana_bread.png", "Cheese_fondue.png", "Hand_pies.png", "Pickles.png"],
-        name: ["ขนมปังกล้วยหอม", "ฟองดูชีส", "พายมือ", "ดอง"]
+        level: 35,
+        img: 'strawberry_cake.png',
+        name: 'เค้กสตรอเบอร์รี่'
     },
     {
         id: 90,
-        level: 92,
-        img: ["Watermelon.png", "Iced_tea.png", "Goat_cheese_toast.png", "Watermelon_juice.png", "Birthday_Bouquet.png", "Passion_fruit_pie.png"],
-        name: ["แตงโม", "ชาเย็น", "ขนมปังปิ้งชีสแพะ", "น้ําแตงโม", "ช่อดอกไม้วันเกิด", "พายเสาวรส"]
+        level: 35,
+        img: 'baked_potato.png',
+        name: 'มันฝรั่งอบ'
     },
     {
         id: 91,
-        level: 93,
-        img: ["Soft_bouquet.png", "Black_sesame_smoothie.png", "Exfoliating_soap.png", "Filled_Donut.png"],
-        name: ["ช่อดอกไม้นุ่ม", "สมูทตี้งาดํา", "สบู่ขัดผิว", "โดนัทสอดไส้"]
+        level: 35,
+        img: 'apple_jam.png',
+        name: 'แยมแอปเปิ้ล'
     },
     {
         id: 92,
-        level: 94,
-        img: ["Plum.png", "Banana_pancakes.png", "Plum_jam.png", "Clay.png", "Tea_pot.png"],
-        name: ["พลัม", "แพนเค้กกล้วยหอม", "แยมพลัม", "ดินเหนียว", "กาน้ําชา"]
+        level: 36,
+        img: 'Chocolate_cake.png',
+        name: 'เค้กช็อคโกแลต'
     },
     {
         id: 93,
-        level: 95,
-        img: ["Floral_candle.png", "Chocolate_roll.png", "Canned_fish.png", "Chickpea.png", "Hummus.png"],
-        name: ["เทียนดอกไม้", "ช็อกโกแลตโรล", "ปลากระป๋อง", "ถั่วชิกพี", "ฮัมมัส"]
+        level: 36,
+        img: 'Casserole.png',
+        name: 'หม้อตุ๋น'
     },
     {
         id: 94,
-        level: 96,
-        img: ["Banana_split.png", "Fish_skewer.png", "Passion_fruit_jam.png", "Potted_plant.png"],
-        name: ["กล้วยแยก", "ปลาเสียบไม้", "แยมเสาวรส", "ไม้กระถาง"]
+        level: 36,
+        img: 'Cacao.png',
+        name: 'โกโก้'
     },
     {
         id: 95,
-        level: 97,
-        img: ["Mint_tea.png", "Mushroom_pot_pie.png", "Mango.png", "Mango_juice.png"],
-        name: ["ชามินต์", "พายหม้อเห็ด", "มะม่วง", "น้ํามะม่วง"]
+        level: 36,
+        img: 'Raspberry_jam.png',
+        name: 'แยมราสเบอร์รี่'
     },
     {
         id: 96,
-        level: 98,
-        img: ["Flower_pendant.png", "Chili_poppers.png", "Falafel.png", "Kimchi.png"],
-        name: ["จี้ดอกไม้", "พริกป่น", "ฟาลาเฟล", "กิมจิ"]
+        level: 37,
+        img: 'Spicy_pizza.png',
+        name: 'พิซซ่ารสเผ็ด'
     },
     {
         id: 97,
-        level: 99,
-        img: ["Eggplant_parmesan.png", "Honey_face_mask.png", "Clay_mug.png", "Rich_fudge.png"],
-        name: ["มะเขือยาวพาเมซาน", "มาส์กหน้าน้ําผึ้ง", "แก้วดินเผา", "ฟัดจ์เข้มข้น"]
+        level: 37,
+        img: 'Blackberry_jam.png',
+        name: 'แยมแบล็กเบอร์รี่'
     },
     {
         id: 98,
-        level: 100,
-        img: ["Cocoa_smoothie.png", "Fried_candy_bar.png", "Tart_dressing.png", "Tropical_fondue.png"],
-        name: ["โกโก้ปั่น", "ลูกกวาดทอด", "น้ําสลัดทาร์ต", "ฟองดูเขตร้อน"]
+        level: 38,
+        img: 'Potato_feta_cake.png',
+        name: 'เค้กเฟต้ามันฝรั่ง'
     },
     {
         id: 99,
-        level: 101,
-        img: ["Mushroom_pasta.png", "Coconut.png", "Macaroon.png"],
-        name: ["พาสต้าเห็ด", "มะพร้าว", "มาการอง"]
+        level: 38,
+        img: 'Cherry_jam.png',
+        name: 'แยมเชอร์รี่'
     },
     {
         id: 100,
-        level: 102,
-        img: ["Plum_smoothie.png", "Dried_fruit.png", "Mint_fudge.png", "Coconut_ice_cream.png"],
-        name: ["สมูทตี้บ๊วย", "ผลไม้อบแห้ง", "มิ้นท์ฟัดจ์", "ไอศกรีมมะพร้าว"]
+        level: 38,
+        img: 'Bracelet.png',
+        name: 'วลัย'
     },
     {
         id: 101,
-        level: 103,
-        img: ["Samosa.png", "Plain_yogurt.png"],
-        name: ["ซาโมซ่า", "โยเกิร์ตธรรมดา"]
+        level: 39,
+        img: 'Potato_bread.png',
+        name: 'ขนมปังมันฝรั่ง'
     },
     {
         id: 102,
-        level: 104,
-        img: ["Mushroom_soup.png", "Chili_fudge.png", "Tropical_smoothie.png", "Guava.png", "Guava_juice.png", "Guava_compote.png"],
-        name: ["ซุปเห็ด", "พริกฟัดจ์", "ทรอปิคอลสมูทตี้", "ฝรั่ง", "น้ําฝรั่ง", "ผลไม้แช่อิ่มฝรั่ง"]
+        level: 39,
+        img: 'Shepherds_pie.png',
+        name: 'พายของคนเลี้ยงแกะ'
     },
     {
         id: 103,
-        level: 105,
-        img: ["Strawberry_yogurt.png"],
-        name: ["โยเกิร์ตสตรอเบอร์รี่"]
+        level: 39,
+        img: 'Chocolate_ice_cream.png',
+        name: 'ไอศกรีมช็อกโกแลต'
     },
     {
         id: 104,
-        level: 106,
-        img: ["Veggie_bouquet.png", "Chickpea_stew.png", "Fruit_sorbet.png"],
-        name: ["ช่อผัก", "สตูว์ถั่วชิกพี", "เชอร์เบทผลไม้"]
+        level: 39,
+        img: 'Honeycomb.png',
+        name: 'รังผึ้ง'
     },
     {
         id: 105,
-        level: 107,
-        img: ["Pomegranate.png", "Pomegranate_tea.png"],
-        name: ["ทับทิม", "ชาทับทิม"]
+        level: 39,
+        img: 'Necklace.png',
+        name: 'สร้อยคอ'
     },
     {
         id: 106,
-        level: 108,
-        img: ["Lemon_fudge.png", "Pomegranate_cake.png"],
-        name: ["เลมอนฟัดจ์", "เค้กทับทิม"]
+        level: 39,
+        img: 'Honey.png',
+        name: 'น้ำผึ้ง'
     },
     {
         id: 107,
-        level: 109,
-        img: ["Hummus_wrap.png", "Tropical_yogurt.png", "Chili_stew.png", "Plain_cupcake.png", "Guava_cupcake.png"],
-        name: ["ห่อฮัมมุส", "ทรอปิคอลโยเกิร์ต", "สตูว์พริก", "คัพเค้กธรรมดา", "คัพเค้กฝรั่ง"]
+        level: 40,
+        img: 'Honey_popcorn.png',
+        name: 'ข้าวโพดคั่วน้ําผึ้ง'
     },
     {
         id: 108,
-        level: 110,
-        img: ["Rice_ball.png"],
-        name: ["ข้าวปั้น"]
+        level: 40,
+        img: 'Diamond_ring.png',
+        name: 'แหวนเพชร'
     },
     {
         id: 109,
-        level: 111,
-        img: ["Peanut_fudge.png"],
-        name: ["ฟัดจ์ถั่วลิสง"]
+        level: 41,
+        img: 'Fish_and_chips.png',
+        name: 'ฟิชแอนด์ชิปส์'
     },
     {
         id: 110,
-        level: 112,
-        img: ["Tropical_cupcake.png", "Winter_stew.png"],
-        name: ["คัพเค้กเขตร้อน", "สตูว์ฤดูหนาว"]
+        level: 41,
+        img: 'Iron_bracelet.png',
+        name: 'สร้อยข้อมือเหล็ก'
     },
     {
         id: 111,
-        level: 114,
-        img: ["Cookie_cupcake.png", "Plain_waffles.png", "Berry_waffles.png", "xxxxx.png"],
-        name: ["คัพเค้กคุกกี้", "วาฟเฟิลธรรมดา", "วาฟเฟิลเบอร์รี่"]
+        level: 42,
+        img: 'Coffee_bean.png',
+        name: 'เมล็ดกาแฟ'
     },
     {
         id: 112,
-        level: 117,
-        img: ["Orange_salad.png", "Chocolate_waffles.png"],
-        name: ["สลัดส้ม", "วาฟเฟิลช็อกโกแลต"]
+        level: 42,
+        img: 'Espresso.png',
+        name: 'เอสเพรสโซ่'
     },
     {
         id: 113,
-        level: 119,
-        img: ["Breakfast_waffles.png", "Oats.png", "Breakfast_bowl.png", "Apple_porridge.png"],
-        name: ["วาฟเฟิลอาหารเช้า", "ข้าวโอ๊ต", "ชามอาหารเช้า", "โจ๊กแอปเปิ้ล"]
+        level: 42,
+        img: 'Honey_apple_cake.png',
+        name: 'เค้กแอปเปิ้ลน้ําผึ้ง'
     },
     {
         id: 114,
-        level: 120,
-        img: ["Pineapple_coconut_bars.png", "Sweet_porridge.png"],
-        name: ["มะพร้าวสับปะรดแท่ง", "โจ๊กหวาน"]
+        level: 43,
+        img: "Caffe_latte.png",
+        name: "กาแฟกับนม",
     },
     {
         id: 115,
-        level: 121,
-        img: ["Rich_soap.png"],
-        name: ["สบู่เข้มข้น"]
+        level: 44,
+        img: 'Chocolate_popcorn.png',
+        name: 'ป๊อปคอร์นช็อกโกแลต'
     },
     {
         id: 116,
-        level: 122,
-        img: ["Fresh_porridge.png"],
-        name: ["โจ๊กสด"]
+        level: 44,
+        img: 'Lobster_tail.png',
+        name: 'หางกุ้งก้ามกราม'
     },
     {
         id: 117,
-        level: 124,
-        img: ["Vanilla_milkshake.png"],
-        name: ["วานิลลามิลค์เชค"]
+        level: 45,
+        img: 'Frutti_di_Mare_pizza.png',
+        name: 'พิซซ่า Frutti di Mare'
     },
     {
         id: 118,
-        level: 125,
-        img: ["Mocha_milkshake.png"],
-        name: ["มอคค่ามิลค์เชค"]
+        level: 45,
+        img: 'Caffe_mocha.png',
+        name: 'กาแฟมอคค่า'
     },
     {
         id: 119,
-        level: 126,
-        img: ["Fruity_milkshake.png"],
-        name: ["ฟรุ๊ตตี้มิลค์เชค"]
+        level: 46,
+        img: 'Raspberry_mocha.png',
+        name: 'ราสเบอร์รี่มอคค่า'
     },
+    {
+        id: 120,
+        level: 46,
+        img: 'Lobster_soup.png',
+        name: 'ซุปกุ้งก้ามกราม'
+    },
+    {
+        id: 121,
+        level: 47,
+        img: 'Hot_chocolate.png',
+        name: 'ช็อคโกแลตร้อน'
+    },
+    {
+        id: 122,
+        level: 47,
+        img: 'Tomato_soup.png',
+        name: 'ซุปมะเขือเทศ'
+    },
+    {
+        id: 123,
+        level: 48,
+        img: 'Red_scarf.png',
+        name: 'ผ้าพันคอสีแดง'
+    },
+    {
+        id: 124,
+        level: 48,
+        img: 'Lobster_skewer.png',
+        name: 'กุ้งก้ามกรามเสียบไม้'
+    },
+    {
+        id: 125,
+        level: 48,
+        img: 'Beeswax.png',
+        name: 'ขี้ผึ้ง'
+    },
+    {
+        id: 126,
+        level: 48,
+        img: 'Strawberry_candle.png',
+        name: 'เทียนสตรอเบอร์รี่'
+    },
+    {
+        id: 127,
+        level: 49,
+        img: 'Rustic_bouquet.png',
+        name: 'ช่อดอกไม้ชนบท'
+    },
+    {
+        id: 128,
+        level: 49,
+        img: 'Pumpkin_soup.png',
+        name: 'ซุปฟักทอง'
+    },
+    {
+        id: 129,
+        level: 49,
+        img: 'Asparagus.png',
+        name: 'หน่อไม้ฝรั่ง'
+    },
+    {
+        id: 130,
+        level: 49,
+        img: 'Asparagus_quiche.png',
+        name: 'คีชหน่อไม้ฝรั่ง'
+    },
+    {
+        id: 131,
+        level: 50,
+        img: 'Strawberry_jam.png',
+        name: 'แยมสตรอเบอร์รี่'
+    },
+    {
+        id: 132,
+        level: 50,
+        img: 'Duck_feather.png',
+        name: 'ขนเป็ด'
+    },
+    {
+        id: 133,
+        level: 50,
+        img: 'Sesame.png',
+        name: 'งา'
+    },
+    {
+        id: 134,
+        level: 50,
+        img: 'Sesame_ice_cream.png',
+        name: 'ไอศกรีมงา'
+    },
+    {
+        id: 135,
+        level: 51,
+        img: 'Caramel_apple.png',
+        name: 'แอปเปิ้ลคาราเมล'
+    },
+    {
+        id: 136,
+        level: 51,
+        img: 'Pillow.png',
+        name: 'หมอน'
+    },
+    {
+        id: 137,
+        level: 51,
+        img: 'Asparagus_soup.png',
+        name: 'ซุปหน่อไม้ฝรั่ง'
+    },
+    {
+        id: 138,
+        level: 52,
+        img: 'Toffee.png',
+        name: 'ลูกกวาด'
+    },
+    {
+        id: 139,
+        level: 52,
+        img: 'Raspberry_candle.png',
+        name: 'เทียนราสเบอร์รี่'
+    },
+    {
+        id: 140,
+        level: 52,
+        img: 'Pineapple.png',
+        name: 'สับปะรด'
+    },
+    {
+        id: 141,
+        level: 52,
+        img: 'Pineapple_juice.png',
+        name: 'น้ําสับปะรด'
+    },
+    {
+        id: 142,
+        level: 53,
+        img: 'Fish_soup.png',
+        name: 'ซุปปลา'
+    },
+    {
+        id: 143,
+        level: 53,
+        img: 'Lily.png',
+        name: 'ลิลลี่'
+    },
+    {
+        id: 144,
+        level: 54,
+        img: 'Soy_sauce.png',
+        name: 'ซอสถั่วเหลือง'
+    },
+    {
+        id: 145,
+        level: 54,
+        img: 'Chocolate.png',
+        name: 'ช็อกโกแลต'
+    },
+    {
+        id: 146,
+        level: 54,
+        img: 'Fancy_cake.png',
+        name: 'เค้กแฟนซี'
+    },
+    {
+        id: 147,
+        level: 56,
+        img: 'Rice.png',
+        name: 'ข้าว'
+    },
+    {
+        id: 148,
+        level: 56,
+        img: 'Sushi_roll.png',
+        name: 'ซูชิโรล'
+    },
+    {
+        id: 149,
+        level: 57,
+        img: 'Olive.png',
+        name: 'มะกอก'
+    },
+    {
+        id: 150,
+        level: 57,
+        img: 'Lollipop.png',
+        name: 'อมยิ้ม'
+    },
+    {
+        id: 151,
+        level: 58,
+        img: 'Lettuce.png',
+        name: 'ผักกาดหอม'
+    },
+    {
+        id: 152,
+        level: 58,
+        img: 'Feta_salad.png',
+        name: 'สลัดเฟต้า'
+    },
+    {
+        id: 153,
+        level: 59,
+        img: 'Lobster_sushi.png',
+        name: 'ซูชิกุ้งมังกร'
+    },
+    {
+        id: 154,
+        level: 59,
+        img: 'Blanket.png',
+        name: 'ผ้าห่ม'
+    },
+    {
+        id: 155,
+        level: 60,
+        img: 'Jelly_beans.png',
+        name: 'ถั่วเยลลี่'
+    },
+    {
+        id: 156,
+        level: 60,
+        img: 'Olive_oil.png',
+        name: 'น้ํามันมะกอก'
+    },
+    {
+        id: 157,
+        level: 60,
+        img: 'Garlic.png',
+        name: 'กระเทียม'
+    },
+    {
+        id: 158,
+        level: 60,
+        img: 'Garlic_bread.png',
+        name: 'ขนมปังกระเทียม'
+    },
+    {
+        id: 159,
+        level: 61,
+        img: "Veggie_bagel.png",
+        name: "เบเกิลผัก"
+    },
+    {
+        id: 160,
+        level: 62,
+        img: 'Mayonnaise.png',
+        name: 'มายองเนส'
+    },
+    {
+        id: 161,
+        level: 62,
+        img: 'BLT_salad.png',
+        name: 'สลัด BLT'
+    },
+    {
+        id: 162,
+        level: 62,
+        img: 'Caramel_latte.png',
+        name: 'คาราเมลลาเต้'
+    },
+    {
+        id: 163,
+        level: 62,
+        img: 'Peanuts.png',
+        name: 'ถั่วลิสง'
+    },
+    {
+        id: 164,
+        level: 63,
+        img: 'Sunflower.png',
+        name: 'ทานตะวัน'
+    },
+    {
+        id: 165,
+        level: 63,
+        img: 'Egg_sushi.png',
+        name: 'ซูชิไข่'
+    },
+    {
+        id: 166,
+        level: 63,
+        img: 'Honey_peanuts.png',
+        name: 'ถั่วลิสงน้ําผึ้ง'
+    },
+    {
+        id: 167,
+        level: 64,
+        img: 'Seafood_salad.png',
+        name: 'สลัดทะเล'
+    },
+    {
+        id: 168,
+        level: 64,
+        img: 'Berry_smoothie.png',
+        name: 'เบอร์รี่ปั่น'
+    },
+    {
+        id: 169,
+        level: 64,
+        img: 'Snack_mix.png',
+        name: 'ขนมขบเคี้ยวผสม'
+    },
+    {
+        id: 170,
+        level: 65,
+        img: 'Bright_bouquet.png',
+        name: 'ช่อดอกไม้สดใส'
+    },
+    {
+        id: 171,
+        level: 65,
+        img: 'Bacon_toast.png',
+        name: 'ขนมปังปิ้งเบคอน'
+    },
+    {
+        id: 172,
+        level: 65,
+        img: 'Pineapple_cake.png',
+        name: 'เค้กสับปะรด'
+    },
+    {
+        id: 173,
+        level: 65,
+        img: 'Chocolate_pie.png',
+        name: 'พายช็อคโกแลต'
+    },
+    {
+        id: 174,
+        level: 65,
+        img: 'Cabbage.png',
+        name: 'กะหล่ำปลี'
+    },
+    {
+        id: 175,
+        level: 65,
+        img: 'Cabbage_soup.png',
+        name: 'ซุปกะหล่ําปลี'
+    },
+    {
+        id: 176,
+        level: 66,
+        img: 'Lemon.png',
+        name: 'มะนาว'
+    },
+    {
+        id: 177,
+        level: 66,
+        img: 'Lemon_curd.png',
+        name: 'เต้าหู้มะนาว'
+    },
+    {
+        id: 178,
+        level: 66,
+        img: 'Olive_dip.png',
+        name: 'น้ําจิ้มมะกอก'
+    },
+    {
+        id: 179,
+        level: 66,
+        img: 'Egg_sandwich.png',
+        name: 'แซนวิชไข่'
+    },
+    {
+        id: 180,
+        level: 66,
+        img: 'Green_smoothie.png',
+        name: 'กรีนสมูทตี้'
+    },
+    {
+        id: 181,
+        level: 67,
+        img: 'Fresh_pasta.png',
+        name: 'พาสต้าสด'
+    },
+    {
+        id: 182,
+        level: 67,
+        img: 'Pasta_salad.png',
+        name: 'สลัดพาสต้า'
+    },
+    {
+        id: 183,
+        level: 67,
+        img: 'Lemon_pie.png',
+        name: 'พายมะนาว'
+    },
+    {
+        id: 184,
+        level: 67,
+        img: 'Grilled_asparagus.png',
+        name: 'หน่อไม้ฝรั่งย่าง'
+    },
+    {
+        id: 185,
+        level: 68,
+        img: 'Onion.png',
+        name: 'หัวหอม'
+    },
+    {
+        id: 186,
+        level: 68,
+        img: 'Grilled_onion.png',
+        name: 'หัวหอมย่าง'
+    },
+    {
+        id: 187,
+        level: 68,
+        img: 'Lemon_cake.png',
+        name: 'เค้กมะนาว'
+    },
+    {
+        id: 188,
+        level: 68,
+        img: 'Peanut_butter_milkshake.png',
+        name: 'มิลค์เชคเนยถั่ว'
+    },
+    {
+        id: 189,
+        level: 69,
+        img: 'Tomato_sauce.png',
+        name: 'ซอสมะเขือเทศ'
+    },
+    {
+        id: 190,
+        level: 69,
+        img: 'Honey_toast.png',
+        name: 'ฮันนี่โทสต์'
+    },
+    {
+        id: 191,
+        level: 69,
+        img: 'Fried_rice.png',
+        name: 'ข้าวผัด'
+    },
+    {
+        id: 192,
+        level: 70,
+        img: 'Yogurt_smoothie.png',
+        name: 'โยเกิร์ตปั่น'
+    },
+    {
+        id: 193,
+        level: 70,
+        img: 'Cloche_hat.png',
+        name: 'หมวก Cloche'
+    },
+    {
+        id: 194,
+        level: 70,
+        img: 'Cucumber.png',
+        name: 'แตงกวา'
+    },
+    {
+        id: 195,
+        level: 70,
+        img: 'Cucumber_smoothie.png',
+        name: 'แตงกวาปั่น'
+    },
+    {
+        id: 196,
+        level: 71,
+        img: 'Orange.png',
+        name: 'ส้ม'
+    },
+    {
+        id: 197,
+        level: 71,
+        img: 'Flower_shawl.png',
+        name: 'ผ้าคลุมไหล่ลายดอกไม้'
+    },
+    {
+        id: 198,
+        level: 71,
+        img: 'Orange_juice.png',
+        name: 'น้ําส้ม'
+    },
+    {
+        id: 199,
+        level: 71,
+        img: 'Peanut_butter_and_jelly_sandwich.png',
+        name: 'แซนวิชเนยถั่วและเยลลี่'
+    },
+    {
+        id: 200,
+        level: 72,
+        img: 'Onion_soup.png',
+        name: 'ซุปหัวหอม'
+    },
+    {
+        id: 201,
+        level: 72,
+        img: 'Lemon_candle.png',
+        name: 'เทียนมะนาว'
+    },
+    {
+        id: 202,
+        level: 72,
+        img: 'Top_hat.png',
+        name: 'หมวกทรงสูง'
+    },
+    {
+        id: 203,
+        level: 72,
+        img: 'Gnocchi.png',
+        name: 'ญ็อกกี'
+    },
+    {
+        id: 204,
+        level: 72,
+        img: 'Beetroot.png',
+        name: 'หัวผักกาดหวาน'
+    },
+    {
+        id: 205,
+        level: 72,
+        img: 'Winter_veggies.png',
+        name: 'ผักเมืองหนาว'
+    },
+    {
+        id: 206,
+        level: 73,
+        img: 'Rice_noodles.png',
+        name: 'ก๋วยเตี๋ยวข้าว'
+    },
+    {
+        id: 207,
+        level: 73,
+        img: 'Noodle_soup.png',
+        name: 'ก๋วยเตี๋ยว'
+    },
+    {
+        id: 208,
+        level: 73,
+        img: 'Gracious_bouquet.png',
+        name: 'ช่อดอกไม้ที่สง่างาม'
+    },
+    {
+        id: 209,
+        level: 74,
+        img: 'Bell_pepper.png',
+        name: 'พริกหยวก'
+    },
+    {
+        id: 210,
+        level: 74,
+        img: 'Marmalade.png',
+        name: 'แยมผิวส้ม'
+    },
+    {
+        id: 211,
+        level: 74,
+        img: 'Sun_hat.png',
+        name: 'หมวกกันแดด'
+    },
+    {
+        id: 212,
+        level: 74,
+        img: 'Veggie_lasagna.png',
+        name: 'ลาซานญ่าผัก'
+    },
+    {
+        id: 213,
+        level: 74,
+        img: 'Veggie_platter.png',
+        name: 'จานผัก'
+    },
+    {
+        id: 214,
+        level: 75,
+        img: 'Hot_dog.png',
+        name: 'ฮอทดอก'
+    },
+    {
+        id: 215,
+        level: 75,
+        img: 'Coleslaw.png',
+        name: 'โคลสลอว์'
+    },
+    {
+        id: 216,
+        level: 75,
+        img: 'Cotton_Candy.png',
+        name: 'สายไหม'
+    },
+    {
+        id: 217,
+        level: 76,
+        img: 'Peach.png',
+        name: 'พีช'
+    },
+    {
+        id: 218,
+        level: 76,
+        img: 'Peach_tart.png',
+        name: 'ทาร์ตพีช'
+    },
+    {
+        id: 219,
+        level: 76,
+        img: 'Tofu_dog.png',
+        name: 'สุนัขเต้าหู้'
+    },
+    {
+        id: 220,
+        level: 76,
+        img: 'Big_sushi_roll.png',
+        name: 'ซูชิโรลใหญ่'
+    },
+    {
+        id: 221,
+        level: 76,
+        img: 'Beetroot_salad.png',
+        name: 'สลัดบีทรูท'
+    },
+    {
+        id: 222,
+        level: 76,
+        img: 'Plain_Donut.png',
+        name: 'โดนัทธรรมดา'
+    },
+    {
+        id: 223,
+        level: 77,
+        img: 'Salsa.png',
+        name: 'ซัลซ่า'
+    },
+    {
+        id: 224,
+        level: 77,
+        img: 'Taco.png',
+        name: 'ทาโก้'
+    },
+    {
+        id: 225,
+        level: 77,
+        img: 'Colourful_omelet.png',
+        name: 'ไข่เจียวหลากสี'
+    },
+    {
+        id: 226,
+        level: 77,
+        img: 'Spring_omelet.png',
+        name: 'ไข่เจียวฤดูใบไม้ผลิ'
+    },
+    {
+        id: 227,
+        level: 78,
+        img: 'Summer_rolls.png',
+        name: 'ซัมเมอร์โรล'
+    },
+    {
+        id: 228,
+        level: 78,
+        img: 'Orange_sorbet.png',
+        name: 'เชอร์เบทส้ม'
+    },
+    {
+        id: 229,
+        level: 78,
+        img: 'Corn_dog.png',
+        name: 'คอร์นด็อก'
+    },
+    {
+        id: 230,
+        level: 78,
+        img: 'Potato_soup.png',
+        name: 'ซุปมันฝรั่ง'
+    },
+    {
+        id: 231,
+        level: 78,
+        img: 'Ginger.png',
+        name: 'ขิง'
+    },
+    {
+        id: 232,
+        level: 78,
+        img: 'Sesame_brittle.png',
+        name: 'งาเปราะ'
+    },
+    {
+        id: 233,
+        level: 78,
+        img: 'Affogato.png',
+        name: 'อัฟโฟกาโต'
+    },
+    {
+        id: 234,
+        level: 79,
+        img: 'Fish_taco.png',
+        name: 'ทาโก้ปลา'
+    },
+    {
+        id: 235,
+        level: 79,
+        img: 'Peach_jam.png',
+        name: 'แยมพีช'
+    },
+    {
+        id: 236,
+        level: 79,
+        img: 'Lobster_pasta.png',
+        name: 'พาสต้ากุ้งมังกร'
+    },
+    {
+        id: 237,
+        level: 79,
+        img: 'Cucumber_sandwich.png',
+        name: 'แซนวิชแตงกวา'
+    },
+    {
+        id: 238,
+        level: 79,
+        img: 'Spicy_fish.png',
+        name: 'ปลารสเผ็ด'
+    },
+    {
+        id: 239,
+        level: 79,
+        img: 'Sprinkled_Donut.png',
+        name: 'โดนัทโรย'
+    },
+    {
+        id: 240,
+        level: 79,
+        img: 'Cheese_omelet.png',
+        name: 'ไข่เจียวชีส'
+    },
+    {
+        id: 241,
+        level: 80,
+        img: 'Tea_leaf.png',
+        name: 'ใบชา'
+    },
+    {
+        id: 242,
+        level: 80,
+        img: 'Green_tea.png',
+        name: 'ชาเขียว'
+    },
+    {
+        id: 243,
+        level: 80,
+        img: 'Onion_dog.png',
+        name: 'สุนัขหัวหอม'
+    },
+    {
+        id: 244,
+        level: 80,
+        img: 'Stuffed_peppers.png',
+        name: 'พริกยัดไส้'
+    },
+    {
+        id: 245,
+        level: 81,
+        img: 'Milk_tea.png',
+        name: 'ชานม'
+    },
+    {
+        id: 246,
+        level: 81,
+        img: 'Bell_pepper_soup.png',
+        name: 'ซุปพริกหยวก'
+    },
+    {
+        id: 247,
+        level: 81,
+        img: 'Chocolate_fondue.png',
+        name: 'ช็อกโกแลตฟองดู'
+    },
+    {
+        id: 248,
+        level: 82,
+        img: 'Peony.png',
+        name: 'โบตั๋น'
+    },
+    {
+        id: 249,
+        level: 82,
+        img: 'Quesadilla.png',
+        name: 'Quesadilla'
+    },
+    {
+        id: 250,
+        level: 82,
+        img: 'Fruit_salad.png',
+        name: 'สลัดผลไม้'
+    },
+    {
+        id: 251,
+        level: 82,
+        img: 'Crunchy_Donut.png',
+        name: 'โดนัทกรุบกรอบ'
+    },
+    {
+        id: 252,
+        level: 83,
+        img: 'Pasta_carbonara.png',
+        name: 'พาสต้าคาโบนาร่า'
+    },
+    {
+        id: 253,
+        level: 83,
+        img: 'Peach_ice_cream.png',
+        name: 'ไอศกรีมพีช'
+    },
+    {
+        id: 254,
+        level: 83,
+        img: 'Honey_tea.png',
+        name: 'ชาน้ําผึ้ง'
+    },
+    {
+        id: 255,
+        level: 83,
+        img: 'Broccoli.png',
+        name: 'บรอกโคลี'
+    },
+    {
+        id: 256,
+        level: 83,
+        img: 'Broccoli_pasta.png',
+        name: 'พาสต้าบร็อคโคลี่'
+    },
+    {
+        id: 257,
+        level: 83,
+        img: 'Rice_omelet.png',
+        name: 'ข้าวไข่เจียว'
+    },
+    {
+        id: 258,
+        level: 84,
+        img: 'Summer_salad.png',
+        name: 'สลัดฤดูร้อน'
+    },
+    {
+        id: 259,
+        level: 84,
+        img: 'Grapes.png',
+        name: 'องุ่น'
+    },
+    {
+        id: 260,
+        level: 84,
+        img: 'Grape_juice.png',
+        name: 'น้ําองุ่น'
+    },
+    {
+        id: 261,
+        level: 84,
+        img: 'Onion_melt.png',
+        name: 'หัวหอมละลาย'
+    },
+    {
+        id: 262,
+        level: 84,
+        img: 'Honey_soap.png',
+        name: 'สบู่น้ําผึ้ง'
+    },
+    {
+        id: 263,
+        level: 84,
+        img: 'Lemon_lotion.png',
+        name: 'โลชั่นมะนาว'
+    },
+    {
+        id: 264,
+        level: 84,
+        img: 'Colorful_Candles.png',
+        name: 'เทียนหลากสี'
+    },
+    {
+        id: 265,
+        level: 85,
+        img: 'Mint.png',
+        name: 'โรงกษาปณ์'
+    },
+    {
+        id: 266,
+        level: 85,
+        img: 'Grape_jam.png',
+        name: 'แยมองุ่น'
+    },
+    {
+        id: 267,
+        level: 85,
+        img: 'Mint_ice_cream.png',
+        name: 'ไอศกรีมมิ้นท์'
+    },
+    {
+        id: 268,
+        level: 86,
+        img: 'Flower_crown.png',
+        name: 'มงกุฎดอกไม้'
+    },
+    {
+        id: 269,
+        level: 86,
+        img: 'Lemon_tea.png',
+        name: 'ชามะนาว'
+    },
+    {
+        id: 270,
+        level: 86,
+        img: 'Bacon_fondue.png',
+        name: 'เบคอนฟองดู'
+    },
+    {
+        id: 271,
+        level: 86,
+        img: 'Peanut_noodles.png',
+        name: 'บะหมี่ถั่วลิสง'
+    },
+    {
+        id: 272,
+        level: 86,
+        img: 'Gingerbread_cookie.png',
+        name: 'คุกกี้ขนมปังขิง'
+    },
+    {
+        id: 273,
+        level: 86,
+        img: 'Cream_Donut.png',
+        name: 'ครีมโดนัท'
+    },
+    {
+        id: 275,
+        level: 87,
+        img: 'Nachos.png',
+        name: 'นาโชส'
+    },
+    {
+        id: 276,
+        level: 87,
+        img: 'Spicy_pasta.png',
+        name: 'พาสต้ารสเผ็ด'
+    },
+    {
+        id: 277,
+        level: 87,
+        img: 'Broccoli_soup.png',
+        name: 'ซุปบร็อคโคลี่'
+    },
+    {
+        id: 278,
+        level: 87,
+        img: 'Bacon_fries.png',
+        name: 'เบคอนทอด'
+    },
+    {
+        id: 279,
+        level: 87,
+        img: 'Potato_Omelet.png',
+        name: 'ไข่เจียวมันฝรั่ง'
+    },
+    {
+        id: 281,
+        level: 88,
+        img: 'Mixed_smoothie.png',
+        name: 'สมูทตี้ผสม'
+    },
+    {
+        id: 282,
+        level: 88,
+        img: 'Banana.png',
+        name: 'กล้วย'
+    },
+    {
+        id: 283,
+        level: 88,
+        img: 'Iced_banana_latte.png',
+        name: 'ลาเต้กล้วยเย็น'
+    },
+    {
+        id: 284,
+        level: 88,
+        img: 'Apple_ginger_tea.png',
+        name: 'ชาขิงแอปเปิ้ล'
+    },
+    {
+        id: 285,
+        level: 88,
+        img: 'Bacon_Donut.png',
+        name: 'เบคอนโดนัท'
+    },
+    {
+        id: 286,
+        level: 88,
+        img: 'Passion_fruit.png',
+        name: 'เสาวรส'
+    },
+    {
+        id: 287,
+        level: 88,
+        img: 'Passion_fruit_juice.png',
+        name: 'น้ําเสาวรส'
+    },
+    {
+        id: 288,
+        level: 89,
+        img: 'Orange_tea.png',
+        name: 'ชาส้ม'
+    },
+    {
+        id: 289,
+        level: 89,
+        img: 'Fruit_cake.png',
+        name: 'เค้กผลไม้'
+    },
+    {
+        id: 290,
+        level: 89,
+        img: 'Mushroom.png',
+        name: 'เห็ด'
+    },
+    {
+        id: 291,
+        level: 89,
+        img: 'Mushroom_salad.png',
+        name: 'สลัดเห็ด'
+    },
+    {
+        id: 292,
+        level: 89,
+        img: 'Tofu_stir_fry.png',
+        name: 'ผัดเต้าหู้'
+    },
+    {
+        id: 293,
+        level: 90,
+        img: 'Candy_bouquet.png',
+        name: 'ช่อดอกไม้'
+    },
+    {
+        id: 294,
+        level: 90,
+        img: 'Eggplant.png',
+        name: 'มะเขือ'
+    },
+    {
+        id: 295,
+        level: 90,
+        img: 'Grilled_eggplant.png',
+        name: 'มะเขือยาวย่าง'
+    },
+    {
+        id: 296,
+        level: 91,
+        img: 'Banana_bread.png',
+        name: 'ขนมปังกล้วยหอม'
+    },
+    {
+        id: 297,
+        level: 91,
+        img: 'Cheese_fondue.png',
+        name: 'ฟองดูชีส'
+    },
+    {
+        id: 298,
+        level: 91,
+        img: 'Hand_pies.png',
+        name: 'พายมือ'
+    },
+    {
+        id: 299,
+        level: 91,
+        img: 'Pickles.png',
+        name: 'ดอง'
+    },
+    {
+        id: 300,
+        level: 92,
+        img: 'Watermelon.png',
+        name: 'แตงโม'
+    },
+    {
+        id: 301,
+        level: 92,
+        img: 'Iced_tea.png',
+        name: 'ชาเย็น'
+    },
+    {
+        id: 302,
+        level: 92,
+        img: 'Goat_cheese_toast.png',
+        name: 'ขนมปังปิ้งชีสแพะ'
+    },
+    {
+        id: 303,
+        level: 92,
+        img: 'Watermelon_juice.png',
+        name: 'น้ําแตงโม'
+    },
+    {
+        id: 304,
+        level: 92,
+        img: 'Birthday_Bouquet.png',
+        name: 'ช่อดอกไม้วันเกิด'
+    },
+    {
+        id: 305,
+        level: 92,
+        img: 'Passion_fruit_pie.png',
+        name: 'พายเสาวรส'
+    },
+    {
+        id: 306,
+        level: 93,
+        img: 'Soft_bouquet.png',
+        name: 'ช่อดอกไม้นุ่ม'
+    },
+    {
+        id: 307,
+        level: 93,
+        img: 'Black_sesame_smoothie.png',
+        name: 'สมูทตี้งาดํา'
+    },
+    {
+        id: 308,
+        level: 93,
+        img: 'Exfoliating_soap.png',
+        name: 'สบู่ขัดผิว'
+    },
+    {
+        id: 309,
+        level: 93,
+        img: 'Filled_Donut.png',
+        name: 'โดนัทสอดไส้'
+    },
+    {
+        id: 310,
+        level: 94,
+        img: 'Plum.png',
+        name: 'พลัม'
+    },
+    {
+        id: 311,
+        level: 94,
+        img: 'Banana_pancakes.png',
+        name: 'แพนเค้กกล้วยหอม'
+    },
+    {
+        id: 312,
+        level: 94,
+        img: 'Plum_jam.png',
+        name: 'แยมพลัม'
+    },
+    {
+        id: 313,
+        level: 94,
+        img: 'Clay.png',
+        name: 'ดินเหนียว'
+    },
+    {
+        id: 314,
+        level: 94,
+        img: 'Tea_pot.png',
+        name: 'กาน้ําชา'
+    },
+    {
+        id: 315,
+        level: 95,
+        img: 'Floral_candle.png',
+        name: 'เทียนดอกไม้'
+    },
+    {
+        id: 316,
+        level: 95,
+        img: 'Chocolate_roll.png',
+        name: 'ช็อกโกแลตโรล'
+    },
+    {
+        id: 317,
+        level: 95,
+        img: 'Canned_fish.png',
+        name: 'ปลากระป๋อง'
+    },
+    {
+        id: 318,
+        level: 95,
+        img: 'Chickpea.png',
+        name: 'ถั่วชิกพี'
+    },
+    {
+        id: 319,
+        level: 95,
+        img: 'Hummus.png',
+        name: 'ฮัมมัส'
+    },
+    {
+        id: 320,
+        level: 96,
+        img: 'Banana_split.png',
+        name: 'กล้วยแยก'
+    },
+    {
+        id: 321,
+        level: 96,
+        img: 'Fish_skewer.png',
+        name: 'ปลาเสียบไม้'
+    },
+    {
+        id: 322,
+        level: 96,
+        img: 'Passion_fruit_jam.png',
+        name: 'แยมเสาวรส'
+    },
+    {
+        id: 323,
+        level: 96,
+        img: 'Potted_plant.png',
+        name: 'ไม้กระถาง'
+    },
+    {
+        id: 324,
+        level: 97,
+        img: 'Mint_tea.png',
+        name: 'ชามินต์'
+    },
+    {
+        id: 325,
+        level: 97,
+        img: 'Mushroom_pot_pie.png',
+        name: 'พายหม้อเห็ด'
+    },
+    {
+        id: 326,
+        level: 97,
+        img: 'Mango.png',
+        name: 'มะม่วง'
+    },
+    {
+        id: 327,
+        level: 97,
+        img: 'Mango_juice.png',
+        name: 'น้ํามะม่วง'
+    },
+    {
+        id: 328,
+        level: 98,
+        img: 'Flower_pendant.png',
+        name: 'จี้ดอกไม้'
+    },
+    {
+        id: 329,
+        level: 98,
+        img: 'Chili_poppers.png',
+        name: 'พริกป่น'
+    },
+    {
+        id: 330,
+        level: 98,
+        img: 'Falafel.png',
+        name: 'ฟาลาเฟล'
+    },
+    {
+        id: 331,
+        level: 98,
+        img: 'Kimchi.png',
+        name: 'กิมจิ'
+    },
+    {
+        id: 332,
+        level: 99,
+        img: 'Eggplant_parmesan.png',
+        name: 'มะเขือยาวพาเมซาน'
+    },
+    {
+        id: 333,
+        level: 99,
+        img: 'Honey_face_mask.png',
+        name: 'มาส์กหน้าน้ําผึ้ง'
+    },
+    {
+        id: 334,
+        level: 99,
+        img: 'Clay_mug.png',
+        name: 'แก้วดินเผา'
+    },
+    {
+        id: 335,
+        level: 99,
+        img: 'Rich_fudge.png',
+        name: 'ฟัดจ์เข้มข้น'
+    },
+    {
+        id: 336,
+        level: 100,
+        img: 'Cocoa_smoothie.png',
+        name: 'โกโก้ปั่น'
+    },
+    {
+        id: 337,
+        level: 100,
+        img: 'Fried_candy_bar.png',
+        name: 'ลูกกวาดทอด'
+    },
+    {
+        id: 338,
+        level: 100,
+        img: 'Tart_dressing.png',
+        name: 'น้ําสลัดทาร์ต'
+    },
+    {
+        id: 339,
+        level: 100,
+        img: 'Tropical_fondue.png',
+        name: 'ฟองดูเขตร้อน'
+    },
+    {
+        id: 340,
+        level: 101,
+        img: 'Mushroom_pasta.png',
+        name: 'พาสต้าเห็ด'
+    },
+    {
+        id: 341,
+        level: 101,
+        img: 'Coconut.png',
+        name: 'มะพร้าว'
+    },
+    {
+        id: 342,
+        level: 101,
+        img: 'Macaroon.png',
+        name: 'มาการอง'
+    },
+    {
+        id: 343,
+        level: 102,
+        img: 'Plum_smoothie.png',
+        name: 'สมูทตี้บ๊วย'
+    },
+    {
+        id: 344,
+        level: 102,
+        img: 'Dried_fruit.png',
+        name: 'ผลไม้อบแห้ง'
+    },
+    {
+        id: 345,
+        level: 102,
+        img: 'Mint_fudge.png',
+        name: 'มิ้นท์ฟัดจ์'
+    },
+    {
+        id: 346,
+        level: 102,
+        img: 'Coconut_ice_cream.png',
+        name: 'ไอศกรีมมะพร้าว'
+    },
+    {
+        id: 347,
+        level: 103,
+        img: 'Samosa.png',
+        name: 'ซาโมซ่า'
+    },
+    {
+        id: 348,
+        level: 103,
+        img: 'Plain_yogurt.png',
+        name: 'โยเกิร์ตธรรมดา'
+    },
+    {
+        id: 349,
+        level: 104,
+        img: 'Mushroom_soup.png',
+        name: 'ซุปเห็ด'
+    },
+    {
+        id: 350,
+        level: 104,
+        img: 'Chili_fudge.png',
+        name: 'พริกฟัดจ์'
+    },
+    {
+        id: 351,
+        level: 104,
+        img: 'Tropical_smoothie.png',
+        name: 'ทรอปิคอลสมูทตี้'
+    },
+    {
+        id: 352,
+        level: 104,
+        img: 'Guava.png',
+        name: 'ฝรั่ง'
+    },
+    {
+        id: 353,
+        level: 104,
+        img: 'Guava_juice.png',
+        name: 'น้ําฝรั่ง'
+    },
+    {
+        id: 354,
+        level: 104,
+        img: 'Guava_compote.png',
+        name: 'ผลไม้แช่อิ่มฝรั่ง'
+    },
+    {
+        id: 355,
+        level: 105,
+        img: 'Strawberry_yogurt.png',
+        name: 'โยเกิร์ตสตรอเบอร์รี่'
+    },
+    {
+        id: 356,
+        level: 106,
+        img: 'Veggie_bouquet.png',
+        name: 'ช่อผัก'
+    },
+    {
+        id: 357,
+        level: 106,
+        img: 'Chickpea_stew.png',
+        name: 'สตูว์ถั่วชิกพี'
+    },
+    {
+        id: 358,
+        level: 106,
+        img: 'Fruit_sorbet.png',
+        name: 'เชอร์เบทผลไม้'
+    },
+    {
+        id: 359,
+        level: 107,
+        img: 'Pomegranate.png',
+        name: 'ทับทิม'
+    },
+    {
+        id: 360,
+        level: 107,
+        img: 'Pomegranate_tea.png',
+        name: 'ชาทับทิม'
+    },
+    {
+        id: 361,
+        level: 108,
+        img: 'Lemon_fudge.png',
+        name: 'เลมอนฟัดจ์'
+    },
+    {
+        id: 362,
+        level: 108,
+        img: 'Pomegranate_cake.png',
+        name: 'เค้กทับทิม'
+    },
+    {
+        id: 363,
+        level: 109,
+        img: 'Hummus_wrap.png',
+        name: 'ห่อฮัมมุส'
+    },
+    {
+        id: 364,
+        level: 109,
+        img: 'Tropical_yogurt.png',
+        name: 'ทรอปิคอลโยเกิร์ต'
+    },
+    {
+        id: 365,
+        level: 109,
+        img: 'Chili_stew.png',
+        name: 'สตูว์พริก'
+    },
+    {
+        id: 366,
+        level: 109,
+        img: 'Plain_cupcake.png',
+        name: 'คัพเค้กธรรมดา'
+    },
+    {
+        id: 367,
+        level: 109,
+        img: 'Guava_cupcake.png',
+        name: 'คัพเค้กฝรั่ง'
+    },
+    {
+        id: 368,
+        level: 110,
+        img: 'Rice_ball.png',
+        name: 'ข้าวปั้น'
+    },
+    {
+        id: 369,
+        level: 111,
+        img: 'Peanut_fudge.png',
+        name: 'ฟัดจ์ถั่วลิสง'
+    },
+    {
+        id: 370,
+        level: 112,
+        img: 'Tropical_cupcake.png',
+        name: 'คัพเค้กเขตร้อน'
+    },
+    {
+        id: 371,
+        level: 112,
+        img: 'Winter_stew.png',
+        name: 'สตูว์ฤดูหนาว'
+    },
+    {
+        id: 372,
+        level: 114,
+        img: 'Cookie_cupcake.png',
+        name: 'คัพเค้กคุกกี้'
+    },
+    {
+        id: 373,
+        level: 114,
+        img: 'Plain_waffles.png',
+        name: 'วาฟเฟิลธรรมดา'
+    },
+    {
+        id: 374,
+        level: 114,
+        img: 'Berry_waffles.png',
+        name: 'วาฟเฟิลเบอร์รี่'
+    },
+    {
+        id: 375,
+        level: 114,
+        img: 'Plain_waffles.png',
+        name: "วาฟเฟิลธรรมดา"
+    },
+    {
+        id: 376,
+        level: 117,
+        img: 'Orange_salad.png',
+        name: 'สลัดส้ม'
+    },
+    {
+        id: 377,
+        level: 117,
+        img: 'Chocolate_waffles.png',
+        name: 'วาฟเฟิลช็อกโกแลต'
+    },
+    {
+        id: 378,
+        level: 119,
+        img: 'Breakfast_waffles.png',
+        name: 'วาฟเฟิลอาหารเช้า'
+    },
+    {
+        id: 379,
+        level: 119,
+        img: 'Oats.png',
+        name: 'ข้าวโอ๊ต'
+    },
+    {
+        id: 380,
+        level: 119,
+        img: 'Breakfast_bowl.png',
+        name: 'ชามอาหารเช้า'
+    },
+    {
+        id: 381,
+        level: 119,
+        img: 'Apple_porridge.png',
+        name: 'โจ๊กแอปเปิ้ล'
+    },
+    {
+        id: 382,
+        level: 120,
+        img: 'Pineapple_coconut_bars.png',
+        name: 'มะพร้าวสับปะรดแท่ง'
+    },
+    {
+        id: 383,
+        level: 120,
+        img: 'Sweet_porridge.png',
+        name: 'โจ๊กหวาน'
+    },
+    {
+        id: 384,
+        level: 121,
+        img: 'Rich_soap.png',
+        name: 'สบู่เข้มข้น'
+    },
+    {
+        id: 385,
+        level: 122,
+        img: 'Fresh_porridge.png',
+        name: 'โจ๊กสด'
+    },
+    {
+        id: 386,
+        level: 124,
+        img: 'Vanilla_milkshake.png',
+        name: 'วานิลลามิลค์เชค'
+    },
+    {
+        id: 387,
+        level: 125,
+        img: 'Mocha_milkshake.png',
+        name: 'มอคค่ามิลค์เชค'
+    },
+    {
+        id: 388,
+        level: 126,
+        img: 'Fruity_milkshake.png',
+        name: 'ฟรุ๊ตตี้มิลค์เชค'
+    }
 ];
-
-
