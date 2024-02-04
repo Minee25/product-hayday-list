@@ -1,3 +1,25 @@
+const goToTop = document.getElementById("go-to-top");
+window.onscroll = function () {
+    scrollFuntion();
+}
+
+function scrollFuntion() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        goToTop.style.top = "20px";
+    } else {
+        goToTop.style.top = "-100px";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+goToTop.addEventListener("click", () => {
+    topFunction();
+});
+
 const itemListEl = document.querySelector(".item-list");
 let cartList = [];
 itemList.forEach((item) => {
@@ -115,8 +137,47 @@ function updateProductModal() {
             <div class="modal-product-count">
                 <h2>${item.count}</h2>
             </div>
+            <div class="edit-product-box">
+                <input type="number" value="${item.count}" min="1" placeholder="จำนวน">
+                <button class="delete-product">ลบ</button>
+            </div>
             `;
             modalItemList.appendChild(modalItemEl);
+
+            // Btn Edit Product
+            const editProductBox = modalItemEl.querySelector(".edit-product-box");
+            const editProductIcon = document.querySelector(".edit-product-icon");
+            editProductIcon.addEventListener("click", () => {
+                editProductBox.classList.toggle("show");
+                if (editProductIcon.innerHTML == `<i class="fa-solid fa-check"></i>`) {
+                    editProductIcon.innerHTML = `<i czlass="fa-regular fa-pen-to-square"></i>`;
+                } else {
+                    editProductIcon.innerHTML = `<i class="fa-solid fa-check"></i>`;
+                }
+            });
+
+            // const editProductBoxInput = modalItemEl.querySelector(".edit-product-box input");
+            // editProductBoxInput.addEventListener("keyup", () => {
+            //     const value = parseInt(editProductBoxInput.value);
+            //     let deleteIndex = cartList.findIndex(cartItem => cartItem.id === item.id);
+            //     if (deleteIndex !== -1) {
+            //         cartList.count = value; 
+
+            //     }
+            //     updateProductModal();
+            // })
+
+            // Delete Product
+            const deleteProduct = modalItemEl.querySelector(".delete-product");
+            deleteProduct.addEventListener("click", () => {
+                let deleteIndex = cartList.findIndex(cartItem => cartItem.id === item.id);
+                if (deleteIndex !== -1) {
+                    cartList.splice(deleteIndex, 1);
+                }
+                editProductIcon.innerHTML = `<i class="fa-regular fa-pen-to-square"></i>`;
+                updateProductModal();
+                updateCartCount();
+            });
         });
     }
 }
