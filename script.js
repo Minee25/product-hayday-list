@@ -1,4 +1,24 @@
+const goToTop = document.getElementById("go-to-top");
+window.onscroll = function () {
+    scrollFuntion();
+}
 
+function scrollFuntion() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        goToTop.style.top = "20px";
+    } else {
+        goToTop.style.top = "-100px";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+goToTop.addEventListener("click", () => {
+    topFunction();
+});
 
 const itemListEl = document.querySelector(".item-list");
 let cartList = [];
