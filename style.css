@@ -15,7 +15,7 @@ body {
     background-color: #fcfcd4;
 }
 
-.go-to-top {
+#go-to-top {
     position: fixed;
     cursor: pointer;
     top: -100px;
@@ -31,7 +31,7 @@ body {
     transition: 0.3s;
 }
 
-.go-to-top i {
+#go-to-top i {
     font-size: 24px;
 }
 
