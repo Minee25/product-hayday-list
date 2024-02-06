@@ -2,25 +2,25 @@ const itemList = [
     {
         id: 1,
         level: 1,
-        img: "wheat.png",
+        img: "Wheat.png",
         name: "ข้าวสาลี"
     },
     {
         id: 2,
         level: 1,
-        img: "egg.png",
+        img: "Egg.png",
         name: "ไข่"
     },
     {
         id: 3,
         level: 2,
-        img: "corn.png",
+        img: "Corn.png",
         name: "ข้าวโพด"
     },
     {
         id: 4,
         level: 2,
-        img: "bread.png",
+        img: "Bread.png",
         name: "ขนมปัง"
     },
     {
