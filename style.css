@@ -20,8 +20,8 @@ body {
     cursor: pointer;
     top: -100px;
     right: 20px;
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     border: 1px solid silver;
     border-radius: 3px;
     background-color: rgba(87, 213, 245, 0.795);
@@ -145,6 +145,7 @@ nav {
     padding: 10px;
 }
 
+/*** Search-box ***/
 .search-box {
     margin-top: 70px;
     padding: 20px;
@@ -193,6 +194,7 @@ nav {
 
 .input-level span {
     font-size: 18px;
+    color: #fff;
 }
 
 .input-level input {
@@ -203,6 +205,27 @@ nav {
     margin: 10px;
 }
 
+.box-btn-show-level {
+    margin: 0 20px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.box-btn-show-level label {
+    font-size: 20px;
+    color: #fff;
+}
+
+.box-btn-show-level input {
+    margin-left: 5px;
+    font-size: 16px;
+    height: 25px;
+    width: 25px;
+}
+.dropdown {
+    margin-left: auto;
+}
 .dropdown select {
     padding: 5px 15px;
     font-size: 16px;
@@ -223,6 +246,7 @@ nav {
     margin: 10px;
     max-width: 170px;
     text-align: center;
+    position: relative;
 }
 
 .item .image {
@@ -355,7 +379,22 @@ nav {
     display: none;
 }
 
-/* modal */
+.box-level.box-level-hide {
+    display: none;
+}
+
+.box-level {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.box-level span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*** modal ***/
 
 .modal {
     position: fixed;
@@ -406,14 +445,14 @@ nav {
     left: 0;
     padding: 10px;
     border: 1px solid silver;
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     border-top-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
 .edit-product-icon i {
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .close-modal {
@@ -423,14 +462,14 @@ nav {
     right: 0;
     padding: 10px;
     border: 1px solid silver;
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
 }
 
 .close-modal i {
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .modal-body {
@@ -456,14 +495,14 @@ nav {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     padding: 10px;
-    width: 90px;
+    width: 120px;
     /* height: 100px; */
     text-align: center;
 }
 
 .modal-product-image {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     display: inline-block;
 }
 
@@ -481,7 +520,7 @@ nav {
 .modal-product-count {
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
-    top: 35px;
+    top: 50px;
     right: 10px;
 }
 
